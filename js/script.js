@@ -41,5 +41,36 @@ for (let i = 0; i < 2; i++)
     }
 }
 
+switch (true){
+    case personalMovieDB.count < 10: 
+        alert('Просмотрено довольно мало фильмов');
+        console.log('Просмотрено довольно мало фильмов');
+        break;
+    case personalMovieDB.count >= 10 && personalMovieDB.count < 30:
+        alert('Вы классический зритель');
+        console.log('Вы классический зритель');
+        break;
+    case personalMovieDB.count >= 30:
+        alert('Вы киноман');
+        console.log('Вы киноман');
+        break;
+    default:
+        alert('Произошла ошибка');
+        console.log('Произошла ошибка');
+        break;
+}
+
+// if (personalMovieDB.count < 10){
+//     alert('Просмотрено довольно мало фильмов');
+// }
+// else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     alert('Вы классический зритель');
+// }
+// else if (personalMovieDB.count >= 30) {
+//     alert('Вы киноман');
+// }
+// else {
+//     alert('Произошла ошибка');
+// }
 
 console.log(personalMovieDB.movies);
